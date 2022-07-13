@@ -13,7 +13,7 @@ td { padding:2px; }
 var input=""; // the input to be calculated
 
 function updateString(value) {
-    input=input+value;
+  input=input+value;
 	document.getElementById("inputString").value=input;
 }
 function calculate() {
@@ -34,28 +34,28 @@ function resetString() {
 <input type="text" size="16" id="inputString" readonly />
 <table border="1">
 <tr>
-   <td><input type="button" value="7" onclick="updateString("7")"/></td>
-   <td><input type="button" value="8" onclick="updateString("8")"/></td>
-   <td><input type="button" value="9" onclick="updateString("9")"/></td>
-   <td><input type="button" value="+" onclick="updateString("+")"/></td>
+   <td><input type="button" onclick="updateString('7')" value="7" /></td>
+   <td><input type="button" onclick="updateString('8')" value="8" /></td>
+   <td><input type="button" onclick="updateString('9')" value="9" /></td>
+   <td><input type="button" onclick="updateString('+')" value="+" /></td>
 </tr>
 <tr>
-   <td><input type="button" value="4" onclick="updateString("4")"/></td>
-   <td><input type="button" value="5" onclick="updateString("5")"/></td>
-   <td><input type="button" value="6" onclick="updateString("6")"/></td>
-   <td><input type="button" value="-" onclick="updateString("-")"/></td>
+   <td><input type="button" onclick="updateString('4')" value="4" /></td>
+   <td><input type="button" onclick="updateString('5')" value="5" /></td>
+   <td><input type="button" onclick="updateString('6')" value="6" /></td>
+   <td><input type="button" onclick="updateString('-')" value="-" /></td>
 </tr>
 <tr>
-   <td><input type="button" value="3" /></td>
-   <td><input type="button" value="2" /></td>
-   <td><input type="button" value="1" /></td>
-   <td><input type="button" value="*" /></td>
+   <td><input type="button" onclick="updateString('3')" value="3" /></td>
+   <td><input type="button" onclick="updateString('2')" value="2" /></td>
+   <td><input type="button" onclick="updateString('1')" value="1" /></td>
+   <td><input type="button" onclick="updateString('*')" value="*" /></td>
 </tr>
 <tr>
-   <td><input type="button" value="0" /></td>
-   <td><input type="button" value="." /></td>
-   <td><input type="button" value="C" onclick="resetString()"/></td>
-   <td><input type="button" value="=" onclick="calculate()"/></td>
+   <td><input type="button" onclick="updateString('0')" value="0" /></td>
+   <td><input type="button" onclick="updateString('.')" value="." /></td>
+   <td><input type="button" onclick="resetString()" value="C" /></td>
+   <td><input type="button" onclick="calculate('=')" value="=" /></td>
 </tr>
 </table>
 
