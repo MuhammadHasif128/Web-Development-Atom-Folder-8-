@@ -1,0 +1,15 @@
+<script type="text/javascript">
+  var numbers = [5,10,15,20,25,30,35,40,45,50];
+  var num1 = parseInt(prompt("Enter starting number"));
+  var num2 = parseInt(prompt("Enter starting number"));
+
+  total = 1;
+
+
+  for (var i = numbers.indexOf(num1); i <= numbers.indexOf(num2); i++) {
+    document.write(numbers[i]+"<br>");
+    total *= numbers[i];
+  }
+
+  document.write(total);
+</script>
